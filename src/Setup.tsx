@@ -1,13 +1,11 @@
 import {useVideoConfig} from 'remotion';
 import * as THREE from 'three';
-import {Canvas} from '@react-three/fiber';
 import {ThreeCanvas} from '@remotion/three';
 
 export const Setup = ({
 	children,
 	cameraFov = 75,
 	cameraPosition = new THREE.Vector3(-5, 5, 5),
-	controls = true,
 	lights = true,
 	...restProps
 }) => {

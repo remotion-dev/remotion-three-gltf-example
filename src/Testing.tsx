@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Mesh, Vector3} from 'three';
+import {Mesh} from 'three';
 
 import {useGLTF} from '@react-three/drei';
 import {Setup} from './Setup';
@@ -8,10 +8,10 @@ import {interpolate, useCurrentFrame} from 'remotion';
 const Suzanne = () => {
 	const {nodes, materials} = useGLTF(
 		'https://jonnyburger.s3.eu-central-1.amazonaws.com/suzanne.glb',
-		true
+		true,
 	);
 	const frame = useCurrentFrame();
-
+	console.log(nodes);
 	const rotate = interpolate(frame, [0, 100], [0, Math.PI * 2]);
 
 	return (

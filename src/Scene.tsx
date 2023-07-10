@@ -1,9 +1,6 @@
-import {getVideoMetadata, VideoMetadata} from '@remotion/media-utils';
-import {ThreeCanvas, useVideoTexture} from '@remotion/three';
-import React, {useEffect, useRef, useState} from 'react';
-import {AbsoluteFill, useVideoConfig, Video} from 'remotion';
-import {Phone} from './Phone';
-import {DracoLocalScene, DracoLocalSceneSt} from './Testing';
+import React from 'react';
+import {AbsoluteFill} from 'remotion';
+import {DracoLocalScene} from './Testing';
 
 const container: React.CSSProperties = {
 	backgroundColor: 'gold',

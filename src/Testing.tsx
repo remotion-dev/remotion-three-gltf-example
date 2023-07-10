@@ -11,7 +11,6 @@ const Suzanne = () => {
 		true,
 	);
 	const frame = useCurrentFrame();
-	console.log(nodes);
 	const rotate = interpolate(frame, [0, 100], [0, Math.PI * 2]);
 
 	return (
